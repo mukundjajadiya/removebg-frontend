@@ -31,7 +31,7 @@ export default function Home() {
       setLoading(true);
 
       const SERVER_URL =
-        process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5000";
+        process.env.NEXT_PUBLIC_SERVER_URL;
 
       const response = await fetch(`${SERVER_URL}/upload`, {
         headers: {
